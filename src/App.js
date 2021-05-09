@@ -9,7 +9,7 @@ import MyCarousel from "./components/my-carousel/mycarousel.component";
 import TitleMessage from "./components/title-message/title-message.component";
 import About from "./pages/about/about.component";
 import ParallaxImage from "./assets/img/parallex/background.webp";
-
+import Skills from "./pages/skills/skills.component";
 import './App.css';
 
 const App = () => {
@@ -34,6 +34,8 @@ const App = () => {
           </div>
         </Parallax>
       </div>
+      {/* Skill Section */}
+      <Skills />
     </div>
   );
 }
