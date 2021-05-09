@@ -8,6 +8,7 @@ import MyNavbar from "./components/my-navbar/mynavbar.component";
 import MyCarousel from "./components/my-carousel/mycarousel.component";
 import TitleMessage from "./components/title-message/title-message.component";
 import About from "./pages/about/about.component";
+import ParallaxImage from "./assets/img/parallex/background.webp";
 
 import './App.css';
 
@@ -17,11 +18,11 @@ const App = () => {
       <MyNavbar />
       <MyCarousel />
       <TitleMessage />
-      <div>
+      <div className="App" style={{ position: "relative" }}>
         <Parallax
           blur={{ min: -30, max: 30 }}
-          bgImage={require("./assets/img/parallex/background.webp")}
-          bgImageAlt=""
+          bgImage={ParallaxImage}
+          bgImageAlt="Parallax"
           strength={-200}
         >
           <div>
